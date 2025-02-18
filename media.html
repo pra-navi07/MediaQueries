@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media operations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+        .container{
+            width: 100vw;
+            height: 180vh;
+            /* min-height: 100vh; */
+            background-color: antiquewhite;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            overflow: scroll;
+           
+        }
+        .box{
+            width: 250px;
+            max-height:425px;
+            min-height: 325px;
+             background-color: red; 
+            background-image: url(be1.png);
+            background-size: cover; 
+            border-radius: 15px;
+            margin: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        .box1{
+            width: 250px;
+            max-height:425px;
+            min-height: 325px;
+             background-color: red; 
+            background-image: url(be2.png);
+            background-size: cover;
+            border-radius: 15px;
+            margin: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        .box2{
+            width: 250px;
+            max-height:425px ;
+            min-height: 325px;
+             background-color: red; 
+            background-image: url(be3.png);
+            background-size: cover;
+            border-radius: 15px;
+            margin: 10px;
+            box-shadow: 0 0 10px black;
+        }
+    
+        .head{
+            color: white;
+            padding: 10px;
+            font-size: 25px;
+        }
+        .p1{
+            color: white;
+            padding:10px;
+            font-size: 20px;
+        }
+        .btn{
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 15px;
+            border-radius: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+
+        }
+        @media(max-width:960px){
+            /* .box{
+                background-color: black;
+            } */
+            .container{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media(max-width:480px){
+            .container{
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="head">God's Own Country kerala</h1>
+            <p class="p1">picturesque beaches</p>
+            <button class="btn">Visit Now</button>
+
+            
+        </div>
+        <div class="box1">
+            <h1 class="head">God's Own Country kerala</h1>
+            <p class="p1">Amazing Sunset</p>
+            <button class="btn">Visit Now</button>
+        </div>
+        <div class="box2">
+            <h1 class="head">God's Own Country kerala</h1>
+            <p class="p1">flavorful cuisine</p>
+            <button class="btn">Visit Now</button>
+        </div>
+    </div>
+</body>
+</html>
